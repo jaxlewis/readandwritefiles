@@ -17,7 +17,7 @@ for record in line:
     add = float(record[3]) + float(record[4]) + float(record[5])
     cust_total += add
 
-report.write("261" + "\t\t\t\t" + str("%.2f" % cust_total))
+report.write(cust_ID + "\t\t\t\t" + str("%.2f" % cust_total))
 
 sales.close()
 report.close()
